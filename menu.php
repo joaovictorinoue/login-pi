@@ -13,16 +13,23 @@
 <body>
     <div class="tela-login">
         <h1>Login</h1>
-        <form action="index.php" method="post">
-            <input type="text" name="email" placeholder="Email">
+        <?php 
+        $mensagem = $_GET["msg"] ?? "";
+        if($mensagem == "erro"){
+          echo "<em class='text-danger'>Usuário ou Senha Inválido </em>";
+        }
+        ?>
+        <form action="login.php" method="post">
+            <input type="text" name="email" placeholder="Email" required>
             <br><br>
-            <input type="text" name="senha" placeholder="Senha">
+            <input type="password" name="senha" placeholder="Senha" required>
             <br><br>
-            <button type="submit" name="enviar">Entrar</button>
+            <button type="submit"><a href="login.php" class="a">Entrar</a></button>
             <br><br>
             <p class="p">Não tem Conta?</p>
-            <button type="button"><a href="#" class="a">Cadastre-se</a></button>
+            <button type="submit"><a href="cadastrar.php" class="a">Cadastre-se</a></button>
         </form>
+        
     </div>
 </body>
 
