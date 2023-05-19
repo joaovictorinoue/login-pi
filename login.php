@@ -9,9 +9,9 @@ $um_usuario = mysqli_query($conexao, $sql_buscar_usuario);
 
 
 if($um_usuario-> num_rows > 0){
-    header("location:home.php");
+    header("location:index.php");
 }else{
-    header("location:menu.php?msg=erro");
+    header("location:menu-login.php?msg=erro");
 }
 
     mysqli_close($conexao);
