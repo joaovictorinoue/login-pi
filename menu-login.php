@@ -16,7 +16,7 @@
         <?php 
         $mensagem = $_GET["msg"] ?? "";
         if($mensagem == "erro"){
-          echo "<em class='text-danger'>Usuário ou Senha Inválido </em>";
+          echo "<em>Usuário ou Senha Inválido </em>";
         }
         ?>
         <form action="login.php" method="post">
