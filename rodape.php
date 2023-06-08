@@ -28,7 +28,7 @@
     <div class="align-self-end" id="navbarSupportedContent">
       <ul class="navbar-nav  mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">CNPJ: 60.244.360/0001-60</a>
+          <a class="nav-link" aria-current="page" href="#">CNPJ: 60.244.360/0001-60</a>
         </li>
       </ul>
     </div>

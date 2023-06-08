@@ -19,7 +19,6 @@ include "cabecalho.php"
         <img src="<?php echo $um_produto["foto"]; ?>" alt="Celular" class="img-fluid mb-3 style=" object-fit: cover; width=75%; object-position: top center;>
         <h3 class="text-white"><?php echo $um_produto["nome"]; ?></h3>
         <h6 class="text-white mt-3 mb-3"><?php echo $um_produto["descricao"]; ?></h6>
-        <h6 class="text-white mt-3 mb-3"><?php echo $um_produto["preco"]; ?></h6>
         <a href="ver-produto.php" class="btn btn-outline-primary mt-3">Ver Mais</a>
       </div>
     <?php
